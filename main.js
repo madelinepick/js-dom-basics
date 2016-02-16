@@ -55,8 +55,17 @@ var allListItems = document.getElementsByTagName('li');
 //
 // body.appendChild(li);
 
-var anotherListElement = document.createElement('li');
-anotherListElement.innerText = "prepend";
-console.log(anotherListElement);
-getSingleElement.insertBefore(anotherListElement, getSingleElement.firstChild);
-console.log(allListItems);
+var theList = document.getElementsByTagName("ul")[0];
+// var child = theList.childNodes;
+// console.log(child);
+
+var childNodes = theList.childNodes;
+console.log(childNodes[2])
+
+
+
+// var anotherListElement = document.createElement('li');
+// anotherListElement.innerText = "prepend";
+// console.log(anotherListElement);
+// getSingleElement.insertBefore(anotherListElement, getSingleElement.firstChild);
+// console.log(allListItems);
